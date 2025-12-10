@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルキャンプ場</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- コンパイル後のJSを読み込む -->
+    <script src="client.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">サンプル<br>キャンプ場</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">施設紹介</a></li>
+                    <li><a href="#price">料金</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#notes">注意事項</a></li>
+                    <li><a href="#reserve">ご予約・お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="hero-slider">
+        <div class="slide-container">
+            <img src="images/top1.jpg" alt="メイン画像1" class="slide-image active">
+            <img src="images/top2.jpg" alt="メイン画像2" class="slide-image">
+            <img src="images/top3.jpg" alt="メイン画像3" class="slide-image">
+        </div>
+    </div>
+     
+    <div class="scrolling-gallery">
+        <div class="scrolling-track">
+            <!-- 繰り返し部分はJSで生成も可能だが、静的なままでもOK -->
+            <div class="gallery-item"><img src="images/gallery1.jpg" alt="ギャラリー1" data-index="0"></div>
+            <div class="gallery-item"><img src="images/gallery2.jpg" alt="ギャラリー2" data-index="1"></div>
+            <div class="gallery-item"><img src="images/gallery3.jpg" alt="ギャラリー3" data-index="2"></div>
+            <div class="gallery-item"><img src="images/gallery4.jpg" alt="ギャラリー4" data-index="3"></div>
+            <div class="gallery-item"><img src="images/gallery5.jpg" alt="ギャラリー5" data-index="4"></div>
+            <div class="gallery-item"><img src="images/gallery6.jpg" alt="ギャラリー6" data-index="5"></div>
+            <div class="gallery-item"><img src="images/gallery7.jpg" alt="ギャラリー7" data-index="6"></div>
+            <div class="gallery-item"><img src="images/gallery8.jpg" alt="ギャラリー8" data-index="7"></div>
+            <div class="gallery-item"><img src="images/gallery9.jpg" alt="ギャラリー9" data-index="8"></div>
+            <div class="gallery-item"><img src="images/gallery10.jpg" alt="ギャラリー10" data-index="9"></div>
+        </div>
+    </div>
+
+    <!-- 中略：施設紹介、料金、アクセス、注意事項は変更なしのため省略 -->
+    <!-- 必要であれば元のコードをそのまま貼り付けてください -->
+    <section id="about" class="container">
+        <!-- 元のコードと同じ -->
+        <h2>施設紹介</h2>
+        <div class="map-section">
+            <p class="map-title">場内マップ</p>
+            <a href="images/site map.jpg" class="lightbox-trigger" data-title="場内マップ">
+                <img src="images/site map.jpg" alt="場内マップ" class="site-map">
+            </a>
+        </div>
+        <!-- 以下略 -->
+    </section>
+
+    <!-- (中略... price, access, notes セクション) -->
+    
+    <section id="price" class="container">
+        <h2>料金</h2>
+        <!-- 元のコードと同じ内容 -->
+        <table>
+            <thead><tr><th>来場者</th><th>1泊</th><th>デイ</th></tr></thead>
+            <tbody><tr><td>1名</td><td>¥1,500</td><td>¥1,500</td></tr><tr><td>ペット1匹</td><td>¥500</td><td>¥500</td></tr></tbody>
+        </table>
+        <!-- Notes略 -->
+    </section>
+
+    <section id="access" class="container">
+        <h2>アクセス</h2>
+         <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.04506552753!2d139.74228307621738!3d35.67589233026669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1b089%3A0x48c7d4fa5e528690!2z5Zu95Lya6K2w5LqL5aCC!5e0!3m2!1sja!2sjp!4v1765377876544!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="notes" class="container">
+        <h2>注意事項</h2>
+        <!-- 元のコードと同じ内容 -->
+        <div class="notes-content">
+            <ul>
+                <li>④の芝生サイトでの焚火は禁止です。テント内へのストーブの持ち込みも禁止しております。もし芝生を焦がした際は大きさによりますが、¥2500から申し受けます。</li>
+                <li>③の一般サイトは焚き火台と焚き火シートをご利用いただければ、焚火していただいて構いません。</li>
+                <li>ゴミは全てお持ち帰りください。</li>
+                <li>受付での物品類の販売は一切しておりません。</li>
+                <li>洗い場の水は井戸水ですので飲食には使用できません。沸かしても同様です。</li>
+                <li>22:00以降はお静かにお願いいたします。</li>
+                <li>他のお客様の迷惑となる行為はご遠慮ください。</li>
+                <li>人数にあったテントとタープをお使い下さい。人数に合わない場合は割増金を頂きます。</li>
+                <li>土曜日のみ1台あたり¥300の駐車料金を頂きます。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="reserve" class="container">
+        <h2>ご予約・お問い合わせ</h2>
+        <p>ご予約はこちらからお願いいたします。<br>またご不明な点がございましたら、お気軽にお問い合わせください。</p>
+        
+        <!-- 送信完了・エラーメッセージ表示エリア -->
+        <div id="global-message" class="success-message" style="display: none;"></div>
+
+        <!-- 1. ご予約フォーム -->
+        <div class="form-wrapper">
+            <h3 class="form-title">ご予約フォーム</h3>
+            <form id="reservation-form" class="php-form">
+                <input type="hidden" name="form_type" value="reservation">
+                
+                <dl>
+                    <dt><label for="res_name">お名前</label><span class="required">必須</span></dt>
+                    <dd>
+                        <input type="text" id="res_name" name="res_name" placeholder="例：山田 太郎">
+                    </dd>
+
+                    <dt><label for="res_email">メールアドレス</label><span class="required">必須</span></dt>
+                    <dd>
+                        <input type="email" id="res_email" name="res_email" placeholder="例：info@example.com">
+                    </dd>
+
+                    <dt><label for="res_tel">電話番号</label></dt>
+                    <dd>
+                        <input type="tel" id="res_tel" name="res_tel" placeholder="例：090-1234-5678">
+                    </dd>
+
+                    <dt><label for="res_people">人数</label><span class="required">必須</span></dt>
+                    <dd>
+                        <input type="text" id="res_people" name="res_people" placeholder="例：3人">
+                    </dd>
+
+                    <dt><label for="res_in">チェックイン予定</label></dt>
+                    <dd class="date-input-area">
+                        <input type="datetime-local" id="res_in" name="res_in">
+                        <!-- JSで曜日spanが追加されます -->
+                    </dd>
+
+                    <dt><label for="res_out">チェックアウト予定</label></dt>
+                    <dd class="date-input-area">
+                        <input type="datetime-local" id="res_out" name="res_out">
+                    </dd>
+
+                    <dt><label for="res_transport">来場手段</label></dt>
+                    <dd>
+                        <input type="text" id="res_transport" name="res_transport" placeholder="例：自家用車 1台">
+                    </dd>
+                </dl>
+                <div class="submit-btn-area">
+                    <button type="submit" class="btn-submit">予約を申し込む</button>
+                </div>
+            </form>
+        </div>
+
+        <hr class="form-separator">
+
+        <!-- 2. お問い合わせフォーム -->
+        <div class="form-wrapper">
+            <h3 class="form-title">お問い合わせフォーム</h3>
+            <form id="contact-form" class="php-form">
+                <input type="hidden" name="form_type" value="contact">
+
+                <dl>
+                    <dt><label for="con_type">お問い合わせ種別</label><span class="required">必須</span></dt>
+                    <dd>
+                        <select id="con_type" name="con_type">
+                            <option value="">選択してください</option>
+                            <option value="ご要望">ご要望</option>
+                            <option value="ご予約のキャンセル">ご予約のキャンセル</option>
+                            <option value="忘れ物・落とし物">忘れ物・落とし物</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </dd>
+
+                    <dt><label for="con_name">お名前</label><span class="required">必須</span></dt>
+                    <dd>
+                        <input type="text" id="con_name" name="con_name" placeholder="例：山田 太郎">
+                    </dd>
+
+                    <dt><label for="con_email">メールアドレス</label><span class="required">必須</span></dt>
+                    <dd>
+                        <input type="email" id="con_email" name="con_email" placeholder="例：info@example.com">
+                    </dd>
+
+                    <dt><label for="con_tel">電話番号</label></dt>
+                    <dd>
+                        <input type="tel" id="con_tel" name="con_tel" placeholder="例：090-1234-5678">
+                    </dd>
+
+                    <dt><label for="con_message">お問い合わせ内容</label><span class="required">必須</span></dt>
+                    <dd>
+                        <textarea id="con_message" name="con_message" rows="5" placeholder="詳細をご記入ください"></textarea>
+                    </dd>
+                </dl>
+                <div class="submit-btn-area">
+                    <button type="submit" class="btn-submit">お問い合わせを送信</button>
+                </div>
+            </form>
+        </div>
+
+        <p>以上のフォームよりからメールをお送りください。<br>3営業日以内にご返信させていただいております。</p>
+        <div class="align-center">
+            <a class="btn" href="tel:1234567890">お電話はこちら</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© サンプルキャンプ場</p>
+            <p>管理人：畑中新 <a href="https://www.facebook.com/profile.php?id=100091226145613" target="_blank" rel="noopener" style="font-size: 1.3em; margin-left: 5px;"><i class="fab fa-facebook"></i></a></p>
+        <p>　 TEL：1234-56-7890</p>
+        <p>メール：sample@proton.me</p>
+        </div>
+    </footer>
+
+    <!-- ライトボックスHTML -->
+    <div id="lightbox-overlay" class="hidden">
+        <div id="lightbox-modal">
+            <span id="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div id="lightbox-controls">
+                <div id="lightbox-prev" class="lightbox-nav">&#10094;</div>
+                <div id="lightbox-next" class="lightbox-nav">&#10095;</div>
+            </div>
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+</body>
+</html>
