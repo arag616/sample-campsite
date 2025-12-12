@@ -165,17 +165,6 @@
                 <input type="hidden" name="form_type" value="contact">
 
                 <dl>
-                    <dt><label for="con_type">お問い合わせ種別</label><span class="required">必須</span></dt>
-                    <dd>
-                        <select id="con_type" name="con_type">
-                            <option value="">選択してください</option>
-                            <option value="ご要望">ご要望</option>
-                            <option value="ご予約のキャンセル">ご予約のキャンセル</option>
-                            <option value="忘れ物・落とし物">忘れ物・落とし物</option>
-                            <option value="その他">その他</option>
-                        </select>
-                    </dd>
-
                     <dt><label for="con_name">お名前</label><span class="required">必須</span></dt>
                     <dd>
                         <input type="text" id="con_name" name="con_name" placeholder="例：山田 太郎">
@@ -189,6 +178,17 @@
                     <dt><label for="con_tel">電話番号</label></dt>
                     <dd>
                         <input type="tel" id="con_tel" name="con_tel" placeholder="例：090-1234-5678">
+                    </dd>
+                    
+                    <dt><label for="con_type">お問い合わせ種別</label><span class="required">必須</span></dt>
+                    <dd>
+                        <select id="con_type" name="con_type">
+                            <option value="">選択してください</option>
+                            <option value="ご要望">ご要望</option>
+                            <option value="ご予約のキャンセル">ご予約のキャンセル</option>
+                            <option value="忘れ物・落とし物">忘れ物・落とし物</option>
+                            <option value="その他">その他</option>
+                        </select>
                     </dd>
 
                     <dt><label for="con_message">お問い合わせ内容</label><span class="required">必須</span></dt>
